@@ -5,11 +5,6 @@ import { crearTodoHtml } from './js/componentes';
 
 export const todoList = new TodoList();
 
-const tarea = new Todo('Meet with Jonah at the cafe!');
+todoList.todos.forEach (crearTodoHtml);
 
-todoList.nuevoTodo( tarea );
-tarea.completado = true;
-
-console.log( todoList )
-
-crearTodoHtml( tarea );
+console.log('todos', todoList.todos);
